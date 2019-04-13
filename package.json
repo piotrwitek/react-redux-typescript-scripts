@@ -1,0 +1,39 @@
+{
+  "name": "react-redux-typescript-guide-scripts",
+  "version": "1.0.0",
+  "description": "Shared dev-tools configuration files based on \"react-redux-typescript-guide\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotrwitek/react-redux-typescript-guide-scripts.git"
+  },
+  "keywords": [
+    "react-redux-typescript-guide",
+    "configuration",
+    "scripts",
+    "tslint",
+    "tsconfig"
+  ],
+  "author": "Piotr Witek <piotrek.witek@gmail.com> (http://piotrwitek.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/piotrwitek/react-redux-typescript-guide-scripts/issues"
+  },
+  "homepage": "https://github.com/piotrwitek/react-redux-typescript-guide-scripts#readme",
+  "peerDependencies": {
+    "tslint": "^5.0.0",
+    "typescript": "^3.0.0"
+  },
+  "optionalDependencies": {
+    "tslint-react": "^4.0.0"
+  },
+  "devDependencies": {
+    "doctoc": "1.4.0",
+    "tslint": "5.15.0",
+    "tslint-react": "4.0.0",
+    "typescript": "3.4.3"
+  }
+}
