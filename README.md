@@ -1,5 +1,5 @@
 <div align="center">
-<h1>react-redux-typescript-guide-scripts 🛠</h1>
+<h1>react-redux-typescript-scripts 🛠</h1>
 
 <p>Shared dev-tools configuration files based on <a href="https://github.com/piotrwitek/react-redux-typescript-guide">react-redux-typescript-guide</a></p>
 </div>
@@ -32,7 +32,7 @@ This module is distributed via npm package and
 should be installed as one of your project's `devDependencies`:
 
 ```
-npm i -D react-redux-typescript-guide-scripts
+npm i -D react-redux-typescript-scripts
 ```
 
 ## Usage
@@ -43,7 +43,7 @@ You can find usage instructions for each tool in it's onw section below.
 ```ts
 {
     "include": ["./src"],
-    "extends": "./node_modules/react-redux-typescript-guide-scripts/tsconfig.json",
+    "extends": "./node_modules/react-redux-typescript-scripts/tsconfig.json",
     "compilerOptions": {
       // you can further customize this config here
     }
@@ -52,12 +52,12 @@ You can find usage instructions for each tool in it's onw section below.
 
 ### TSLint
 Following configs are available to extend (you can use one or all by declaring an array in `extends` config property):
-  - `react-redux-typescript-guide-scripts/tslint-recommended` - best default config - based on recommended tslint built-in config.
-  - `react-redux-typescript-guide-scripts/tslint-react`- for react projects - based on `tslint-react`.
+  - `react-redux-typescript-scripts/tslint-recommended` - best default config - based on recommended tslint built-in config.
+  - `react-redux-typescript-scripts/tslint-react`- for react projects - based on `tslint-react`.
 
 ```ts
 {
-  "extends": ["react-redux-typescript-guide-scripts/tslint-recommended.json", "react-redux-typescript-guide-scripts/tslint-react.json"]
+  "extends": ["react-redux-typescript-scripts/tslint-recommended.json", "react-redux-typescript-scripts/tslint-react.json"]
   "rules": {
     // you can further customize this config here
   }

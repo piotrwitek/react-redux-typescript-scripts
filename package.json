@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-typescript-guide-scripts",
+  "name": "react-redux-typescript-scripts",
   "version": "1.0.0",
   "description": "Shared dev-tools configuration files based on \"react-redux-typescript-guide\"",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/piotrwitek/react-redux-typescript-guide-scripts.git"
+    "url": "git+https://github.com/piotrwitek/react-redux-typescript-scripts.git"
   },
   "keywords": [
     "react-redux-typescript-guide",
@@ -20,9 +20,9 @@
   "author": "Piotr Witek <piotrek.witek@gmail.com> (http://piotrwitek.github.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/piotrwitek/react-redux-typescript-guide-scripts/issues"
+    "url": "https://github.com/piotrwitek/react-redux-typescript-scripts/issues"
   },
-  "homepage": "https://github.com/piotrwitek/react-redux-typescript-guide-scripts#readme",
+  "homepage": "https://github.com/piotrwitek/react-redux-typescript-scripts#readme",
   "peerDependencies": {
     "tslint": "^5.0.0",
     "typescript": "^3.0.0"
