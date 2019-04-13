@@ -42,11 +42,11 @@ You can find usage instructions for each tool in it's onw section below.
 ### tsconfig.json
 ```ts
 {
-    "include": ["./src"],
-    "extends": "./node_modules/react-redux-typescript-scripts/tsconfig.json",
-    "compilerOptions": {
-      // you can further customize this config here
-    }
+  "include": ["./src"],
+  "extends": "./node_modules/react-redux-typescript-scripts/tsconfig.json",
+  "compilerOptions": {
+    // you can further customize options here
+  }
 }
 ```
 
@@ -59,7 +59,7 @@ Following configs are available to extend (you can use one or all by declaring a
 {
   "extends": ["react-redux-typescript-scripts/tslint-recommended.json", "react-redux-typescript-scripts/tslint-react.json"],
   "rules": {
-    // you can further customize this config here
+    // you can further customize options here
   }
 }
 ```
