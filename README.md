@@ -57,7 +57,7 @@ Following configs are available to extend (you can use one or all by declaring a
 
 ```ts
 {
-  "extends": ["react-redux-typescript-scripts/tslint-recommended.json", "react-redux-typescript-scripts/tslint-react.json"]
+  "extends": ["react-redux-typescript-scripts/tslint-recommended.json", "react-redux-typescript-scripts/tslint-react.json"],
   "rules": {
     // you can further customize this config here
   }
