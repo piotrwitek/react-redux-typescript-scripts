@@ -52,7 +52,6 @@ You can find usage instructions for each tool in it's onw section below.
 
 ### TSLint
 Following configs are available to extend (you can use one or all by declaring an array in `extends` config property):
-  
   - `react-redux-typescript-guide-scripts/tslint-recommended` - best default config - based on recommended tslint built-in config.
   - `react-redux-typescript-guide-scripts/tslint-react`- for react projects - based on `tslint-react`.
 
