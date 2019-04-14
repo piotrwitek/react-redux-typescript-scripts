@@ -23,10 +23,11 @@
     "url": "https://github.com/piotrwitek/react-redux-typescript-scripts/issues"
   },
   "homepage": "https://github.com/piotrwitek/react-redux-typescript-scripts#readme",
-  "dependencies": {},
-  "peerDependencies": {
+  "dependencies": {
     "@typescript-eslint/parser": "1.6.0",
-    "@typescript-eslint/eslint-plugin": "1.6.0",
+    "@typescript-eslint/eslint-plugin": "1.6.0"
+  },
+  "peerDependencies": {
     "tslint": "^5.0.0",
     "typescript": "^3.0.0"
   },
