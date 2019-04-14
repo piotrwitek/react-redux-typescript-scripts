@@ -55,11 +55,26 @@ Following configs are available to extend (you can use one or all by declaring a
   - `react-redux-typescript-scripts/tslint-recommended.json` - best default config - based on recommended tslint built-in config.
   - `react-redux-typescript-scripts/tslint-react.json`- for react projects - based on `tslint-react`.
 
+#### tslint.json
 ```ts
 {
   "extends": ["react-redux-typescript-scripts/tslint-recommended.json", "react-redux-typescript-scripts/tslint-react.json"],
   "rules": {
     // you can further customize options here
+  }
+}
+```
+
+### ESLint
+Compatible with `create-react-app`
+
+Add this to your `package.json`
+```ts
+{
+  "eslintConfig": {
+    "extends": [
+      "react-app", "react-redux-typescript-scripts/eslint.js"
+    ]
   }
 }
 ```
