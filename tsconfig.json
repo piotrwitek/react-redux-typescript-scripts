@@ -25,6 +25,7 @@
     "target": "es5", // "es2015" for ES6+ engines
     "module": "esnext", // "es2015" for tree-shaking
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "noEmitOnError": false,
