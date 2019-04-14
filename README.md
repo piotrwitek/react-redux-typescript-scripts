@@ -80,7 +80,7 @@ This will fully integrate `@typescript-eslint` config to your `create-react-app`
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-redux-typescript-scripts/eslint.js"
+      "./node_modules/react-redux-typescript-scripts/eslint.js"
     ],
     "rules": {
       // you can further customize options here
