@@ -31,7 +31,7 @@
 
 ## Installation
 
-This module is distributed via npm package and
+This package is distributed via npm and
 should be installed as one of your project's `devDependencies`:
 
 ```
@@ -54,6 +54,8 @@ You can find usage instructions for each tool in it's onw section below.
 ```
 
 ### TSLint
+> NOTE: This package will install necessary dependencies (`tslint` and `tslint-react`) so you don't need to do it in your project.
+
 Following configs are available to extend (you can use one or all by declaring an array in `extends` config property):
   - `react-redux-typescript-scripts/tslint.json` - best default config - based on recommended tslint built-in config.
   - `react-redux-typescript-scripts/tslint-react.json`- for react projects - based on `tslint-react`.
@@ -72,6 +74,7 @@ Following configs are available to extend (you can use one or all by declaring a
 ```
 
 ### ESLint
+> NOTE: This package will install necessary dependencies for you (`eslint` + parser and plugin from `@typescript-eslint`) so you don't need to do it in your project.
 
 #### .eslintrc
 ```ts
