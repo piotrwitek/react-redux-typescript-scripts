@@ -24,20 +24,16 @@
   },
   "homepage": "https://github.com/piotrwitek/react-redux-typescript-scripts#readme",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
-    "@typescript-eslint/eslint-plugin": "1.6.0"
+    "tslint": "5.15.0",
+    "tslint-react": "4.0.0"
   },
   "peerDependencies": {
-    "tslint": "^5.0.0",
     "typescript": "^3.0.0"
-  },
-  "optionalDependencies": {
-    "tslint-react": "^4.0.0"
   },
   "devDependencies": {
     "doctoc": "1.4.0",
-    "tslint": "5.15.0",
-    "tslint-react": "4.0.0",
     "typescript": "3.4.3"
   }
 }
