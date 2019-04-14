@@ -55,14 +55,14 @@ You can find usage instructions for each tool in it's onw section below.
 
 ### TSLint
 Following configs are available to extend (you can use one or all by declaring an array in `extends` config property):
-  - `react-redux-typescript-scripts/tslint-recommended.json` - best default config - based on recommended tslint built-in config.
+  - `react-redux-typescript-scripts/tslint.json` - best default config - based on recommended tslint built-in config.
   - `react-redux-typescript-scripts/tslint-react.json`- for react projects - based on `tslint-react`.
 
 #### tslint.json
 ```ts
 {
   "extends": [
-    "react-redux-typescript-scripts/tslint-recommended.json", 
+    "react-redux-typescript-scripts/tslint.json", 
     "react-redux-typescript-scripts/tslint-react.json"
   ],
   "rules": {
@@ -73,8 +73,20 @@ Following configs are available to extend (you can use one or all by declaring a
 
 ### ESLint
 
-#### `create-react-app`
-This will fully integrate `@typescript-eslint` config to your `create-react-app`:
+#### .eslintrc
+```ts
+{
+  "extends": [
+    "./node_modules/react-redux-typescript-scripts/eslint.js"
+  ],
+  "rules": {
+    // you can further customize options here
+  }
+}
+```
+
+#### create-react-app
+This single change will fully integrate `@typescript-eslint` config with your `create-react-app`:
 ```ts
 {
   "eslintConfig": {
@@ -82,9 +94,6 @@ This will fully integrate `@typescript-eslint` config to your `create-react-app`
       "react-app",
       "./node_modules/react-redux-typescript-scripts/eslint.js"
     ],
-    "rules": {
-      // you can further customize options here
-    }
   }
 }
 ```
