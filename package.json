@@ -1,6 +1,6 @@
 {
   "name": "react-redux-typescript-scripts",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "Shared dev-tools configuration files based on \"react-redux-typescript-guide\"",
   "main": "index.js",
   "scripts": {

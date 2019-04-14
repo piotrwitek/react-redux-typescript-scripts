@@ -20,6 +20,9 @@
 - [Usage](#usage)
   - [tsconfig.json](#tsconfigjson)
   - [TSLint](#tslint)
+    - [tslint.json](#tslintjson)
+  - [ESLint](#eslint)
+    - [`create-react-app`](#create-react-app)
 - [LICENSE](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -58,7 +61,10 @@ Following configs are available to extend (you can use one or all by declaring a
 #### tslint.json
 ```ts
 {
-  "extends": ["react-redux-typescript-scripts/tslint-recommended.json", "react-redux-typescript-scripts/tslint-react.json"],
+  "extends": [
+    "react-redux-typescript-scripts/tslint-recommended.json", 
+    "react-redux-typescript-scripts/tslint-react.json"
+  ],
   "rules": {
     // you can further customize options here
   }
@@ -66,20 +72,22 @@ Following configs are available to extend (you can use one or all by declaring a
 ```
 
 ### ESLint
-Compatible with `create-react-app`
 
-Add this to your `package.json`
+#### `create-react-app`
+This will fully integrate `@typescript-eslint` config to your `create-react-app`:
 ```ts
 {
   "eslintConfig": {
     "extends": [
-      "react-app", "react-redux-typescript-scripts/eslint.js"
-    ]
+      "react-app",
+      "react-redux-typescript-scripts/eslint.js"
+    ],
+    "rules": {
+      // you can further customize options here
+    }
   }
 }
 ```
-
----
 
 ## LICENSE
 
