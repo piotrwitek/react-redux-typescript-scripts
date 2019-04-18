@@ -24,7 +24,8 @@
   - [TSLint](#tslint)
     - [tslint.json](#tslintjson)
   - [ESLint](#eslint)
-    - [`create-react-app`](#create-react-app)
+    - [.eslintrc](#eslintrc)
+    - [create-react-app](#create-react-app)
 - [LICENSE](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

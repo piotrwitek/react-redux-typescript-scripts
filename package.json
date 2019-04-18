@@ -4,6 +4,7 @@
   "description": "Shared dev-tools configuration files based on \"react-redux-typescript-guide\"",
   "main": "index.js",
   "scripts": {
+    "doctoc": "doctoc .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
