@@ -8,6 +8,8 @@
 
 > For now you can find `tslint` and `tsconfig` configurations, but I'm willing to add more tools and scripts in the future e.g. `jest`, `babel`, `eslint`, npm scripts etc.
 
+> I'm open to suggestion on improvements like adding or changing the rules (especially for ESLint), please feel free to open an issue.
+
 ---
 
 ## Table of Contents
