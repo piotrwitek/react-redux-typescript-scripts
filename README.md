@@ -34,13 +34,13 @@
 
 ## Installation
 
-1. This package is distributed via npm and should be installed as `devDependencies`:
+This package is distributed via npm and should be installed as `devDependencies`:
 
 ```
 npm i -D react-redux-typescript-scripts
 ```
 
-2. You should also install optional dependencies depending on 
+> NOTE: You should also install optional dependencies listed for each tool in their **Usage** section.
 
 ## Usage
 
@@ -58,11 +58,14 @@ You can find usage instructions for each tool in it's onw section below.
 ```
 
 ### TSLint
-> WARNING: When using this config you need to install `tslint` as dependency in your project.
+> **WARNING:** When using this config you'll need to install additonal dependencies listed below.
+```
+npm i -D tslint tslint-react
+```
 
 There are few configs available (you can use one or all by declaring an array in `extends` config property):
   - `react-redux-typescript-scripts/tslint.json` - mandatory base config - based on recommended rules.
-  - `react-redux-typescript-scripts/tslint-react.json`- include react rules - based on `tslint-react`.
+  - `react-redux-typescript-scripts/tslint-react.json`- additional react specific rules - based on `tslint-react`.
 
 #### tslint.json
 ```ts
@@ -78,7 +81,10 @@ There are few configs available (you can use one or all by declaring an array in
 ```
 
 ### ESLint
-> WARNING: When using this config you need to install `eslint` as dependency in your project.
+> **WARNING:** When using this config you'll need to install additonal dependencies listed below.
+```
+npm i -D eslint @typescript-eslint/eslint-plugin eslint-config-prettier
+```
 
 There are few configs available (you can use one or all by declaring an array in `extends` config property):
   - `./node_modules/react-redux-typescript-scripts/eslint.json` - mandatory base config - based on recommended rules.
