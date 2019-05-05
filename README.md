@@ -82,7 +82,7 @@ There are few configs available (you can use one or all by declaring an array in
 
 There are few configs available (you can use one or all by declaring an array in `extends` config property):
   - `./node_modules/react-redux-typescript-scripts/eslint.json` - mandatory base config - based on recommended rules.
-  - `./node_modules/react-redux-typescript-scripts/eslint-prettier.json`- disable eslint formatting rules conflicting with prettier - based on `eslint-config-prettier` _(**WARNING:** Should be the last one in `extends` array)_.
+  - `./node_modules/react-redux-typescript-scripts/eslint-prettier.json`- disable eslint formatting related rules conflicting with prettier - based on `eslint-config-prettier` _(**WARNING:** Should be the last one in `extends` array)_.
 
 #### .eslintrc
 ```ts

@@ -33,11 +33,6 @@
   "peerDependencies": {
     "typescript": "^3.0.0"
   },
-  "optionalDependencies": {
-    "eslint": "^5.0.0",
-    "prettier": "^1.0.0",
-    "tslint": "^5.0.0"
-  },
   "devDependencies": {
     "doctoc": "1.4.0",
     "eslint": "5.16.0",
