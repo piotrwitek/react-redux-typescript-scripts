@@ -6,9 +6,9 @@
 
 ---
 
-> For now you can find `tslint` and `tsconfig` configurations, but I'm willing to add more tools and scripts in the future e.g. `jest`, `babel`, `eslint`, npm scripts etc.
+> For now you can find `eslint`, `tslint` and `tsconfig` configurations, but I'm willing to add more tools and scripts in the future e.g. `jest`, `babel`, npm scripts etc.
 
-> I'm open to suggestion on improvements like adding or changing the rules (especially for ESLint), please feel free to open an issue.
+> I'm open to suggestion on improvements like adding or changing default rules so please feel free to open an issue.
 
 ---
 
@@ -34,12 +34,13 @@
 
 ## Installation
 
-This package is distributed via npm and
-should be installed as one of your project's `devDependencies`:
+1. This package is distributed via npm and should be installed as `devDependencies`:
 
 ```
 npm i -D react-redux-typescript-scripts
 ```
+
+2. You should also install optional dependencies depending on 
 
 ## Usage
 
@@ -57,18 +58,18 @@ You can find usage instructions for each tool in it's onw section below.
 ```
 
 ### TSLint
-> NOTE: This package will install all the necessary dependencies except `tslint` so please include it in your project dependencies.
+> WARNING: When using this config you need to install `tslint` as dependency in your project.
 
-Following configs are available to extend (you can use one or all by declaring an array in `extends` config property):
-  - `react-redux-typescript-scripts/tslint.json` - best default config - based on recommended tslint built-in config.
-  - `react-redux-typescript-scripts/tslint-react.json`- for react projects - based on `tslint-react`.
+There are few configs available (you can use one or all by declaring an array in `extends` config property):
+  - `react-redux-typescript-scripts/tslint.json` - mandatory base config - based on recommended rules.
+  - `react-redux-typescript-scripts/tslint-react.json`- include react rules - based on `tslint-react`.
 
 #### tslint.json
 ```ts
 {
   "extends": [
     "react-redux-typescript-scripts/tslint.json", 
-    "react-redux-typescript-scripts/tslint-react.json"
+    "react-redux-typescript-scripts/tslint-react.json" // optional
   ],
   "rules": {
     // you can further customize options here
@@ -77,13 +78,18 @@ Following configs are available to extend (you can use one or all by declaring a
 ```
 
 ### ESLint
-> NOTE: This package will install all the necessary dependencies for you except `eslint` so please include it in your project dependencies.
+> WARNING: When using this config you need to install `eslint` as dependency in your project.
+
+There are few configs available (you can use one or all by declaring an array in `extends` config property):
+  - `./node_modules/react-redux-typescript-scripts/eslint.json` - mandatory base config - based on recommended rules.
+  - `./node_modules/react-redux-typescript-scripts/eslint-prettier.json`- disable eslint formatting rules conflicting with prettier - based on `eslint-config-prettier` _(**WARNING:** Should be the last one in `extends` array)_.
 
 #### .eslintrc
 ```ts
 {
   "extends": [
-    "./node_modules/react-redux-typescript-scripts/eslint.js"
+    "./node_modules/react-redux-typescript-scripts/eslint.js",
+    "./node_modules/react-redux-typescript-scripts/eslint-prettier.js" // optional
   ],
   "rules": {
     // you can further customize options here
@@ -92,15 +98,14 @@ Following configs are available to extend (you can use one or all by declaring a
 ```
 
 #### create-react-app
-This single change will fully integrate `@typescript-eslint` config with your `create-react-app`:
+To fully integrate `@typescript-eslint` with your `create-react-app` add below snippet to your `.eslintrc` or `package.json` under the `eslintConfig` key:
 ```ts
 {
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "./node_modules/react-redux-typescript-scripts/eslint.js"
-    ],
-  }
+  "extends": [
+    "react-app",
+    "./node_modules/react-redux-typescript-scripts/eslint.js",
+    "./node_modules/react-redux-typescript-scripts/eslint-prettier.js" // optional
+  ],
 }
 ```
 
