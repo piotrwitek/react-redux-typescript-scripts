@@ -44,7 +44,7 @@ npm i -D react-redux-typescript-scripts
 
 ## Usage
 
-You can find usage instructions for each tool in it's own section below.
+You can find usage instructions for each tool in its own section below.
 
 ### tsconfig.json
 ```ts
@@ -58,12 +58,12 @@ You can find usage instructions for each tool in it's own section below.
 ```
 
 ### TSLint
-> **WARNING:** When using this config you'll need to install additonal dependencies listed below.
+> **WARNING:** When using this config you'll need to install the additional dependencies listed below.
 ```
 npm i -D tslint tslint-react
 ```
 
-There are few configs available (you can use one or all by declaring an array in `extends` config property):
+There are a few configs available (you can use one or all by declaring an array in `extends` config property):
   - `react-redux-typescript-scripts/tslint.json` - mandatory base config - based on recommended rules.
   - `react-redux-typescript-scripts/tslint-react.json`- additional react specific rules - based on `tslint-react`.
 
@@ -81,12 +81,12 @@ There are few configs available (you can use one or all by declaring an array in
 ```
 
 ### ESLint
-> **WARNING:** When using this config you'll need to install additonal dependencies listed below.
+> **WARNING:** When using this config you'll need to install the additional dependencies listed below.
 ```
 npm i -D eslint @typescript-eslint/eslint-plugin eslint-config-prettier
 ```
 
-There are few configs available (you can use one or all by declaring an array in `extends` config property):
+There are a few configs available (you can use one or all by declaring an array in `extends` config property):
   - `./node_modules/react-redux-typescript-scripts/eslint.json` - mandatory base config - based on recommended rules.
   - `./node_modules/react-redux-typescript-scripts/eslint-prettier.json`- disable eslint formatting related rules conflicting with prettier - based on `eslint-config-prettier` _(**WARNING:** Should be the last one in `extends` array)_.
 
@@ -104,7 +104,7 @@ There are few configs available (you can use one or all by declaring an array in
 ```
 
 #### create-react-app
-To fully integrate `@typescript-eslint` with your `create-react-app` add below snippet to your `.eslintrc` or `package.json` under the `eslintConfig` key:
+To fully integrate `@typescript-eslint` with your `create-react-app` add the below snippet to your `.eslintrc` or `package.json` under the `eslintConfig` key:
 ```ts
 {
   "extends": [
