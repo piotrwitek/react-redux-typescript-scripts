@@ -44,7 +44,7 @@ npm i -D react-redux-typescript-scripts
 
 ## Usage
 
-You can find usage instructions for each tool in it's onw section below.
+You can find usage instructions for each tool in it's own section below.
 
 ### tsconfig.json
 ```ts
